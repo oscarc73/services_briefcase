@@ -87,9 +87,12 @@ body {
 }
 
 /* MAIN / INTRO */
-.main {
-  background-image: url("../images/textura.webp");
-  background-size: cover;
+.intro {
+  background-image: url(../images/textura.webp);
+  background-size: 130%;
+  background-position: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .intro_profile-img-txt {
@@ -115,7 +118,7 @@ h2 {
 }
 
 .intro_profile-description {
-  margin: 35px;
+  margin-top: 2.1875rem;
   width: 45.4375rem;
 }
 
@@ -125,4 +128,9 @@ h2 {
 
 .intro_profile-description p {
   font-size: 1rem;
+}
+
+/* FACTURE */
+.facture h2 {
+  text-align: left;
 }
