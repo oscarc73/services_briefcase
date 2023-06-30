@@ -76,59 +76,53 @@ h6 {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 1180px;
-    margin: 0 auto;
+  width: 1260px;
+  margin: 0 auto;
 }
 
-/* INTRO */
-.main::before {
-    content: "";
-    width: 3px;
-    height: 751px;
-    position: absolute;
-    right: 50%;
-    top: 0;
-    background-color: #FFD600;
-    transform: rotate(139deg);
+/* MAIN / INTRO */
+.main {
+  background-image: url("../images/textura.webp");
+  background-size: cover;
 }
 
 .intro_profile-img-txt {
-    display: block;
-    padding-top: 73px;
-    padding-left: 100px;
-    width: 215px;
-    box-sizing: content-box;
+  display: block;
+  padding-top: 73px;
+  padding-left: 100px;
+  width: 215px;
+  box-sizing: content-box;
 }
 
 .intro_profile-img-txt img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 3px solid #4A71FF;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 3px solid #4A71FF;
 }
 
-.intro_profile-img-txt img, h2 {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 24px;
+.intro_profile-img-txt img,
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
 }
 
 .intro_profile-description {
-    margin: 35px;
-    width: 45.4375rem;
+  margin: 35px;
+  width: 45.4375rem;
 }
 
 .intro_profile-description h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .intro_profile-description p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-
