@@ -134,3 +134,21 @@ h2 {
 .facture h2 {
   text-align: left;
 }
+
+.facture_cards-card {
+  width: 230px;
+  border: 2px solid #3679fd;
+  border-radius: 1rem;
+  height: 400px;
+  background-image: url("../images/delies-img.webp");
+  background-size: cover;
+}
+
+
+.facture_cards-description {
+  position: relative;
+  top: 50%;
+  background-color: white;
+  height: 50%;
+  border-radius: 0 0 1rem 1rem;
+}
