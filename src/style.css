@@ -79,11 +79,17 @@ h6 {
   --primary_color: #4A71FF;
   --secundary_color: #6385FF;
   --text_color: #555555;
-  --white_color: #ffff ;
+  --white_color: #ffff;
   --black_color: #000000;
 }
 
-h1, h2, h3, h4, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
   color: var(--text_color);
 }
 
@@ -96,6 +102,17 @@ body {
 .container {
   width: 1260px;
   margin: 0 auto;
+}
+
+.subtitle::before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: var(--primary_color);
+  top: 38px;
+  left: 0;
 }
 
 /* MAIN / -----O----- INTRO -----O----- */
@@ -115,7 +132,7 @@ body {
   box-sizing: content-box;
 }
 
-.intro_profile-img-txt img {
+.img_profile img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -123,7 +140,7 @@ body {
   margin-bottom: 1rem !important;
 }
 
-.intro_profile-img-txt img,
+.img_profile img,
 h2 {
   margin: 0 auto;
   text-align: center;
@@ -146,12 +163,6 @@ h2 {
 /* -----O----- FACTURE -----O----- */
 .facture h2 {
   text-align: left;
-}
-
-.facture h2::before {
-  content: "";
-  width: 20%;
-  color: var(--primary_color);
 }
 
 .facture_cards {
@@ -180,14 +191,17 @@ h2 {
   background-image: url("../images/delies-img.webp");
   background-size: cover;
 }
+
 .card2 {
   background-image: url("../images/delies-img.webp");
   background-size: cover;
 }
+
 .card3 {
   background-image: url("../images/soagency.webp");
   background-size: cover;
 }
+
 .card4 {
   background-image: url("../images/Netbook.webp");
   background-size: cover;
@@ -203,9 +217,42 @@ h2 {
   /* display: none; */
 }
 
-.facture_cards-description h3, ul, li, a{
+.facture_cards-description * {
   color: var(--white_color);
   line-height: 1.7;
   list-style: none;
   padding: 0;
+}
+
+/* -----O----- FOOTER -----O----- */
+
+.footer {
+  padding: 5rem 0;
+}
+
+.info h2 {
+  text-align: left;
+}
+
+.info_contac {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+.info_img_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info_img_txt a {
+  color: var(--text_color);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.info_img_txt a:hover {
+  color: var(--primary_color);
 }
