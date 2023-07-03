@@ -187,26 +187,6 @@ h2 {
   transform: translate(-4px, -4px);
 }
 
-.card1 {
-  background-image: url("../images/delies-img.webp");
-  background-size: cover;
-}
-
-.card2 {
-  background-image: url("../images/delies-img.webp");
-  background-size: cover;
-}
-
-.card3 {
-  background-image: url("../images/soagency.webp");
-  background-size: cover;
-}
-
-.card4 {
-  background-image: url("../images/Netbook.webp");
-  background-size: cover;
-}
-
 .facture_cards-description {
   position: relative;
   top: 50%;
