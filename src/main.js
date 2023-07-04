@@ -58,7 +58,7 @@ let printProducts = (arr) => {
         factureCard.style.backgroundSize = 'cover';
 
         const factureCardDescription = document.createElement('div');
-        factureCardDescription.classList.add('facture_cards-description');
+        factureCardDescription.classList.add('facture_cards-description', 'inactive');
 
         const titleProduct = document.createElement('h3');
         titleProduct.innerText = card.title
@@ -81,3 +81,14 @@ let printProducts = (arr) => {
 }
 
 printProducts(cards)
+
+//Active or inactive description on cards
+const productCards = document.querySelector('.facture_cards-card');
+const cardsDescriptions = document.querySelector('.facture_cards-description')
+
+productCards.addEventListener('click', toggleCardDescrip);
+
+function toggleCardDescrip() {
+    console.log('active or inative cards Description')
+    cardsDescriptions.classList.toggle('inactive')
+}
