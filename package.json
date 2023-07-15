@@ -4,7 +4,7 @@
   "description": "Here is the portfolio of products and services made in my work as a web developer. Projects in code, with managers like WordPress and more",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d 'Products portforms'"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
