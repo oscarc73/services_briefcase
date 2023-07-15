@@ -15,7 +15,7 @@ class Cards {
 }
 
 let productPortforms = new Cards(
-    '../images/delies-img.webp',
+    '../images/portform.webp',
     'Product Portforms',
     '#',
     'GitHub',
@@ -83,12 +83,60 @@ let printProducts = (arr) => {
 printProducts(cards)
 
 //Active or inactive description on cards
-const productCards = document.querySelector('.facture_cards-card');
-const cardsDescriptions = document.querySelector('.facture_cards-description')
+const productCards = document.querySelectorAll('div.facture_cards-card');
 
-productCards.addEventListener('click', toggleCardDescrip);
+productCards.forEach(card => {
+    card.addEventListener('click', toggleCardDescrip);
+});
 
 function toggleCardDescrip() {
     console.log('active or inative cards Description')
+    this.querySelector('.facture_cards-description').classList.toggle('inactive');
+};
+
+/* 
+En el tercer intento se agregó un evento de clic a cada elemento productCard utilizando el método forEach. Dentro de la función toggleCardDescrip, se utiliza this para hacer referencia al elemento productCard específico al que se hizo clic.
+
+Luego, utilizando this.querySelector('.facture_cards-description'), se selecciona el elemento hijo con la clase facture_cards-description dentro del productCard al que se hizo clic. Después, se aplica la clase inactive al elemento seleccionado utilizando classList.toggle('inactive').
+
+De esta manera, solo se aplicará la clase 'inactive' al elemento facture_cards-description dentro del productCard al que se le haya hecho clic. Los demás elementos permanecerán sin cambios.
+*/
+
+
+/* -----o-----
+Primer intento con querySelector() y segundo con querySelectorAll
+
+const productCards = document.querySelector('div.facture_cards-card');
+const cardsDescriptions = document.querySelector('div.facture_cards-description')
+
+primer intento
+
+prductCards.addEventListener('click', toggleCardDescrip);
+
+ function toggleCardDescrip() {
+    console.log('active or inative cards Description')
     cardsDescriptions.classList.toggle('inactive')
 }
+
+En este primer intento solo estaba seleccionando las primeras tarjetas y funcionaba solo para las primeras
+
+Segundo intento
+
+
+const productCards = document.querySelectorAll('div.facture_cards-card');
+const cardsDescriptions = document.querySelectorAll('div.facture_cards-description')
+
+productCards.forEach(card => {
+    card.addEventListener('click', toggleCardDescrip);
+});
+
+function toggleCardDescrip() {
+    console.log('active or inative cards Description')
+    cardsDescriptions.forEach(description => {
+        description.classList.toggle('inactive');
+    });
+}; 
+
+En el segundo intento estaba seleccionando a todas las tarjetas y por cada click me aparecia en todas. Lo que realmente queria era que a la tarjeta que le diera click me mostrara la descripcion.
+ -----o-----
+ */

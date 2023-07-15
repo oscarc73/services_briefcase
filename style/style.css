@@ -74,6 +74,7 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
 /* General */
 :root {
   --primary_color: #4A71FF;
@@ -126,6 +127,7 @@ body {
   background-position: center;
   padding-top: 70px;
   padding-bottom: 70px;
+  background-repeat: no-repeat;
 }
 
 .intro_profile-img-txt {
@@ -239,4 +241,123 @@ h2 {
 
 .info_img_txt a:hover {
   color: var(--primary_color);
+}
+
+/* -----o----- Media Query -----o----- */
+@media(max-width: 920px) {
+
+  /* Section main */
+  /* Subsection intro */
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .intro_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro_profile-img-txt {
+    padding-left: 0px;
+  }
+
+  .intro_profile-description {
+    text-align: center;
+  }
+
+  /* Subsection facture */
+  .facture h2 {
+    text-align: center;
+  }
+
+  .subtitle::before {
+    width: 30%;
+    top: 45px;
+    left: 35%;
+  }
+
+  .facture_cards {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  /* -----o----- FOOTER -----o----- */
+  .info h2 {
+    text-align: center;
+  }
+
+  .info_contac {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 420px) {
+
+  /* Section main */
+  /* Subsection intro */
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    background-position: top;
+  }
+
+  .intro_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro_profile-img-txt {
+    padding-left: 0px;
+  }
+
+  .intro_profile-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro_profile-description h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro_profile-description p {
+    max-width: 20rem;
+  }
+
+  /* Subsection facture */
+  .facture h2 {
+    text-align: center;
+  }
+
+  .subtitle::before {
+    width: 64%;
+    top: 45px;
+    left: 18%;
+  }
+
+  .facture_cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* -----o----- FOOTER -----o----- */
+  .info h2 {
+    text-align: center;
+  }
+
+  .info_contac {
+    justify-content: center;
+  }
+
+  .info_contac .img_profile {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
