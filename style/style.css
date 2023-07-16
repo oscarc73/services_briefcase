@@ -1,0 +1,363 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* General */
+:root {
+  --primary_color: #4A71FF;
+  --secundary_color: #6385FF;
+  --text_color: #555555;
+  --white_color: #ffff;
+  --black_color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  color: var(--text_color);
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.inactive {
+  display: none;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.subtitle::before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: var(--primary_color);
+  top: 38px;
+  left: 0;
+}
+
+/* MAIN / -----O----- INTRO -----O----- */
+.intro {
+  background-image: url(../images/textura.webp);
+  background-size: 130%;
+  background-position: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-repeat: no-repeat;
+}
+
+.intro_profile-img-txt {
+  display: block;
+  padding-top: 73px;
+  padding-left: 100px;
+  width: 215px;
+  box-sizing: content-box;
+}
+
+.img_profile img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 3px solid var(--primary_color);
+  margin-bottom: 1rem !important;
+}
+
+.img_profile img,
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.intro_profile-description {
+  margin-top: 2.1875rem;
+  width: 45.4375rem;
+}
+
+.intro_profile-description h1 {
+  font-size: 3rem;
+}
+
+.intro_profile-description p {
+  font-size: 1rem;
+}
+
+/* -----O----- FACTURE -----O----- */
+.facture h2 {
+  text-align: left;
+}
+
+.facture_cards {
+  margin-top: 73px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6.125rem;
+}
+
+.facture_cards-card {
+  width: 280px;
+  border: 2px solid var(--primary_color);
+  border-radius: 1rem;
+  height: 400px;
+  transition:
+    box-shadow 200ms ease-in-out,
+    transform 200ms ease-in-out;
+}
+
+.facture_cards-card:hover {
+  box-shadow: 0px 4px 8px 4px rgba(146, 165, 184, 1);
+  transform: translate(-4px, -4px);
+}
+
+.facture_cards-description {
+  position: relative;
+  top: 50%;
+  background-color: var(--secundary_color);
+  height: 51%;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+  /* display: none; */
+}
+
+.facture_cards-description * {
+  color: var(--white_color);
+  line-height: 1.7;
+  list-style: none;
+  padding: 0;
+}
+
+/* -----O----- FOOTER -----O----- */
+
+.footer {
+  padding: 5rem 0;
+}
+
+.info h2 {
+  text-align: left;
+}
+
+.info_contac {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+.info_img_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info_img_txt a {
+  color: var(--text_color);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.info_img_txt a:hover {
+  color: var(--primary_color);
+}
+
+/* -----o----- Media Query -----o----- */
+@media(max-width: 920px) {
+
+  /* Section main */
+  /* Subsection intro */
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .intro_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro_profile-img-txt {
+    padding-left: 0px;
+  }
+
+  .intro_profile-description {
+    text-align: center;
+  }
+
+  /* Subsection facture */
+  .facture h2 {
+    text-align: center;
+  }
+
+  .subtitle::before {
+    width: 30%;
+    top: 45px;
+    left: 35%;
+  }
+
+  .facture_cards {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  /* -----o----- FOOTER -----o----- */
+  .info h2 {
+    text-align: center;
+  }
+
+  .info_contac {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 420px) {
+
+  /* Section main */
+  /* Subsection intro */
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    background-position: top;
+  }
+
+  .intro_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro_profile-img-txt {
+    padding-left: 0px;
+  }
+
+  .intro_profile-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro_profile-description h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro_profile-description p {
+    max-width: 20rem;
+  }
+
+  /* Subsection facture */
+  .facture h2 {
+    text-align: center;
+  }
+
+  .subtitle::before {
+    width: 64%;
+    top: 45px;
+    left: 18%;
+  }
+
+  .facture_cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* -----o----- FOOTER -----o----- */
+  .info h2 {
+    text-align: center;
+  }
+
+  .info_contac {
+    justify-content: center;
+  }
+
+  .info_contac .img_profile {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
