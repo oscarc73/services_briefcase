@@ -1,0 +1,22 @@
+{
+  "name": "products-portforms",
+  "version": "1.0.0",
+  "description": "Here is the portfolio of products and services made in my work as a web developer. Projects in code, with managers like WordPress and more",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/oscarc73/services_briefcase.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oscarc73/services_briefcase/issues"
+  },
+  "homepage": "https://github.com/oscarc73/services_briefcase#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
