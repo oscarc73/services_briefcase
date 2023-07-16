@@ -8,9 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oscarc73/services_briefcase.git"
+    "url": "git+ssh://git@github.com/oscarc73/services_briefcase.git"
   },
-  "keywords": [],
   "author": "Oscar Carabali <oscar.jcarabali@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -18,8 +17,6 @@
   },
   "homepage": "https://github.com/oscarc73/services_briefcase#readme",
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "install": "^0.13.0",
-    "npm": "^9.8.0"
+    "gh-pages": "^5.0.0"
   }
 }
