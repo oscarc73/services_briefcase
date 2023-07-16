@@ -8,14 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/oscarc73/services_briefcase.git"
+    "url": "git+https://github.com/oscarc73/services_briefcase.git"
   },
-  "keywords": [
-    "Portafolio",
-    "Portforms",
-    "services",
-    "products"
-  ],
+  "keywords": [],
   "author": "Oscar Carabali <oscar.jcarabali@gmail.com>",
   "license": "MIT",
   "bugs": {
