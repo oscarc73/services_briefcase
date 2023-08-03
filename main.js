@@ -15,7 +15,7 @@ class Cards {
 }
 
 let productPortforms = new Cards(
-    'https://raw.githubusercontent.com/oscarc73/services_briefcase/main/images/portform.webp',
+    'https://i.ibb.co/PD2dGfJ/portform.webp',
     'Product Portforms',
     '#',
     'GitHub',
@@ -23,7 +23,7 @@ let productPortforms = new Cards(
     'HTML, CSS, JavaScript');
 
 let delies = new Cards(
-    'https://raw.githubusercontent.com/oscarc73/services_briefcase/main/images/delies-img.webp',
+    'https://i.ibb.co/0G9Pbhg/delies-img.webp',
     'Delies',
     'https://www.delies.co',
     'delies.co',
@@ -31,7 +31,7 @@ let delies = new Cards(
     'WordPress, CSS');
 
 let soagency = new Cards(
-    'https://raw.githubusercontent.com/oscarc73/services_briefcase/main/images/soagency.webp',
+    'https://i.ibb.co/6Y2fvGK/soagency.webp',
     'SoAgency Latam',
     'https://www.soagencylatam.com',
     'soagencylatam.com',
@@ -40,7 +40,7 @@ let soagency = new Cards(
 )
 
 let netbook = new Cards(
-    'https://raw.githubusercontent.com/oscarc73/services_briefcase/main/images/Netbook.webp',
+    'https://i.ibb.co/Wg97yNW/Netbook.webp',
     'General project',
     'https://oscarc73.github.io/oscarc73/',
     'Neetbook',
