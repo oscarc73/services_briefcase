@@ -17,7 +17,7 @@ class Cards {
 let productPortforms = new Cards(
     'https://i.ibb.co/PD2dGfJ/portform.webp',
     'Product Portforms',
-    '#',
+    'https://github.com/oscarc73/services_briefcase',
     'GitHub',
     'Services portfolio page.',
     'HTML, CSS, JavaScript');
@@ -48,7 +48,16 @@ let netbook = new Cards(
     'HTML, CSS'
 )
 
-cards.push(productPortforms, delies, soagency, netbook)
+let workshopAPI = new Cards(
+    'https://i.ibb.co/2M83ZqH/proyect-API.jpg',
+    'Workshop Climate API',
+    'https://oscarc73.github.io/workshop-API/',
+    'Workshop API',
+    'workshop on calling 3 weather APIs, names of countries and their flags',
+    'JavaScript, CSS, HTML'
+)
+
+cards.push(productPortforms, delies, soagency, netbook, workshopAPI)
 
 let printProducts = (arr) => {
     for (card of arr) {
