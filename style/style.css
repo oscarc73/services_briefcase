@@ -171,7 +171,8 @@ h2 {
 }
 
 .intro_profile-description h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  padding-bottom: 12px;
 }
 
 .intro_profile-description p {
@@ -338,7 +339,7 @@ h2 {
   }
 
   .intro_profile-description h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .intro_profile-description p {
