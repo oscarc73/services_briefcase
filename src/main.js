@@ -57,7 +57,16 @@ let workshopAPI = new Cards(
     'JavaScript, CSS, HTML'
 )
 
-cards.push(productPortforms, delies, soagency, netbook, workshopAPI)
+let newsletter_fomr = new Cards(
+    'https://i.ibb.co/RCL1WjZ/proyect-newsletter-form.png',
+    'Newsletter form',
+    'https://oscarc73.github.io/newsletter_form/',
+    'Newsletter Form',
+    'Simple proyect newsletter form developed widh css, html and javascript',
+    'CSS, HTML, JavaScript'
+)
+
+cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr)
 
 let printProducts = (arr) => {
     for (card of arr) {
