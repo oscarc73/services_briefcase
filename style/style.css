@@ -208,9 +208,9 @@ h2 {
 
 .facture_cards-description {
   position: relative;
-  top: 50%;
+  top: 37%;
   background-color: var(--secundary_color);
-  height: 51%;
+  height: 64%;
   border-radius: 0 0 1rem 1rem;
   padding: 1rem;
   animation: up 1s ease-in-out forwards;

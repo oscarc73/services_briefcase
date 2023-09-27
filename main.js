@@ -66,7 +66,25 @@ let newsletter_fomr = new Cards(
     'CSS, HTML, JavaScript'
 )
 
-cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr)
+let estudiandoVirtual = new Cards (
+    'https://i.ibb.co/smBN0TT/estudiandovirtual-1.webp',
+    'UAO university e-commerce',
+    'https://estudiandovirtual.uao.edu.co/',
+    'estudiandovirtual.uao.edu.co',
+    'Proposal for a virtual store and sale of courses for universities',
+    'WordPress, CSS'
+)
+
+let posgradosUAO = new Cards (
+    'https://i.ibb.co/PhFNrKj/posgrados-UAO-1.webp',
+    'Posgrados UAO',
+    'https://posgrados.uao.edu.co/',
+    'Posgrados UAO',
+    'Proposal for a university postgraduate website for the UAO university',
+    'WordPress, CSS'
+)
+
+cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr, estudiandoVirtual, posgradosUAO)
 
 let printProducts = (arr) => {
     for (card of arr) {
