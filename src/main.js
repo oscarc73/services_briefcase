@@ -68,7 +68,7 @@ let newsletter_fomr = new Cards(
 
 let estudiandoVirtual = new Cards (
     'https://i.ibb.co/smBN0TT/estudiandovirtual-1.webp',
-    'UAO university e-commerce',
+    'University e-commerce',
     'https://estudiandovirtual.uao.edu.co/',
     'estudiandovirtual.uao.edu.co',
     'Proposal for a virtual store and sale of courses for universities',
@@ -79,12 +79,21 @@ let posgradosUAO = new Cards (
     'https://i.ibb.co/PhFNrKj/posgrados-UAO-1.webp',
     'Posgrados UAO',
     'https://posgrados.uao.edu.co/',
-    'Posgrados UAO',
+    'posgrados.uao.edu.co',
     'Proposal for a university postgraduate website for the UAO university',
     'WordPress, CSS'
 )
 
-cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr, estudiandoVirtual, posgradosUAO)
+let indigoClinic = new Cards (
+    'https://i.ibb.co/F70MF6W/indigo.webp',
+    'Indigo Medical Clinic',
+    'https://indigo-clinic.com/',
+    'www.indigo-clinic.com',
+    'A simple services website about a clinic of Dubai',
+    'WordPress'
+)
+
+cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr, estudiandoVirtual, posgradosUAO, indigoClinic)
 
 let printProducts = (arr) => {
     for (card of arr) {
