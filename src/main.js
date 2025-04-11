@@ -33,8 +33,8 @@ let delies = new Cards(
 let soagency = new Cards(
     'https://i.ibb.co/6Y2fvGK/soagency.webp',
     'SoAgency Latam',
-    'https://www.soagencylatam.com',
-    'soagencylatam.com',
+    'https://www.soagency.dev',
+    'soagency.dev',
     'Digital marketing service.',
     'WordPress, CSS'
 )
@@ -66,24 +66,6 @@ let newsletter_fomr = new Cards(
     'CSS, HTML, JavaScript'
 )
 
-let estudiandoVirtual = new Cards (
-    'https://i.ibb.co/smBN0TT/estudiandovirtual-1.webp',
-    'University e-commerce',
-    'https://estudiandovirtual.uao.edu.co/',
-    'estudiandovirtual.uao.edu.co',
-    'Proposal for a virtual store and sale of courses for universities',
-    'WordPress, CSS'
-)
-
-let posgradosUAO = new Cards (
-    'https://i.ibb.co/PhFNrKj/posgrados-UAO-1.webp',
-    'Posgrados UAO',
-    'https://posgrados.uao.edu.co/',
-    'posgrados.uao.edu.co',
-    'Proposal for a university postgraduate website for the UAO university',
-    'WordPress, CSS'
-)
-
 let indigoClinic = new Cards (
     'https://i.ibb.co/F70MF6W/indigo.webp',
     'Indigo Medical Clinic',
@@ -93,7 +75,16 @@ let indigoClinic = new Cards (
     'WordPress'
 )
 
-cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr, estudiandoVirtual, posgradosUAO, indigoClinic)
+let itsFuluzTime = new Cards (
+    'https://i.ibb.co/k63tmKjC/mobile.webp',
+    'Its Fuluz Time',
+    'https://itsfuluztime.com/',
+    'https://itsfuluztime.com/',
+    'Brand 100% from Colombia that offer accessories for women',
+    'WordPress, CSS'
+)
+
+cards.push(productPortforms, delies, soagency, netbook, workshopAPI, newsletter_fomr, indigoClinic, itsFuluzTime)
 
 let printProducts = (arr) => {
     for (card of arr) {
